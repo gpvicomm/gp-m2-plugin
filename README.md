@@ -32,12 +32,12 @@ Now you can see the Global Payments ViComm settings in this path `Stores > Confi
 
 
 ## Maintenance
-If you need update the plugin to latest version execute: `composer update gpvicomm/payment-gateway` or `composer require gpvicomm/payment-gateway:2.3.1` for specific version.
+If you need update the plugin to latest version execute: `composer update vicomm/payment-gateway` or `composer require vicomm/payment-gateway:2.3.1` for specific version.
 
 ## Webhook Notifications and Order Updates
 Every time a transaction changes their status you will get an HTTP POST request from Global Payments ViComm to your webhook.
 
 The URL that will be used for the order updates via webhook is:
-`https://magentodomain.com/rest/V2/webhook/gpvicomm`
+`https://magentodomain.com/rest/V2/webhook/vicomm`
 
 This URL will be configured on Global Payments ViComm.

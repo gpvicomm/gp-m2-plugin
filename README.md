@@ -1,4 +1,4 @@
-#Global Payments ViComm Magento module
+# Global Payments ViComm Magento module
 
 This module is a solution that allows Magento users to easily process payments with Global Payments ViComm.
 
@@ -6,9 +6,9 @@ This module is a solution that allows Magento users to easily process payments w
 
 **1. Execute this command for install our package:**
 
-Install the latest version.  `composer require gpvicomm/payment-gateway`
+Install the latest version.  `composer require vicomm/payment-gateway`
 
-Install a specific version.  `composer require gpvicomm/payment-gateway:2.3.1`
+Install a specific version.  `composer require vicomm/payment-gateway:2.3.1`
 
 Once the installation finished, continue with the next commands in your bash terminal.
 

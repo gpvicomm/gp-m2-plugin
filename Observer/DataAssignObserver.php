@@ -7,8 +7,8 @@ use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Validator\Exception as MagentoValidatorException;
 use Magento\Payment\Observer\AbstractDataAssignObserver;
 use ViComm\PaymentGateway\Gateway\Config\CardConfig;
-use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Gateway\Config\LinkToPayConfig;
+use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Helper\Logger;
 
 class DataAssignObserver extends AbstractDataAssignObserver

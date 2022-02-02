@@ -2,7 +2,7 @@
 
 namespace ViComm\PaymentGateway\Gateway\Http\Client;
 
-use Payment\Payment as ViComm;
+use ViComm\ViComm;
 use ViComm\PaymentGateway\Gateway\Config\CardConfig;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Model\Adminhtml\Source\Currency;

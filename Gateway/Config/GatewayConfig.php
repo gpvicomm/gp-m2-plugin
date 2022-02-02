@@ -11,8 +11,8 @@ use ViComm\PaymentGateway\Model\Adminhtml\Source\Env;
 class GatewayConfig extends Config
 {
     // === CONSTANTS === //
-    const GATEWAY_CODE = 'gpvicomm_gateway';
-    const CODE = 'gpvicomm_gateway';
+    const GATEWAY_CODE = 'vicomm_gateway';
+    const CODE = 'vicomm_gateway';
     const ACTIVE = 'active';
     const TITLE = 'title';
     const ENVIRONMENT = 'environment';

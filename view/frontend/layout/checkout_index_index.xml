@@ -21,7 +21,6 @@
                                                         <item name="renders" xsi:type="array">
                                                             <!-- merge payment method renders here -->
                                                             <item name="children" xsi:type="array">
-
                                                                 <item name="vicomm_gateway" xsi:type="array">
                                                                     <item name="component" xsi:type="string">
                                                                         ViComm_PaymentGateway/js/view/payment/vicomm

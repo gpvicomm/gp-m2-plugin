@@ -8,7 +8,7 @@ use ViComm\PaymentGateway\Helper\Logger;
 class LinkToPayConfig extends GatewayConfig
 {
     # CONSTANTS
-    const CODE = 'gpvicomm_ltp';
+    const CODE = 'vicomm_ltp';
     const ALLOW_INSTALLMENTS = 'allow_installments';
     const ALLOW_PARTIAL_PAYMENTS = 'allow_partial_payments';
     const EXPIRATION_DAYS = 'expiration_days';

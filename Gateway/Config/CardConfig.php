@@ -8,7 +8,7 @@ use ViComm\PaymentGateway\Helper\Logger;
 class CardConfig extends GatewayConfig
 {
     # CONSTANTS
-    const CODE = 'gpvicomm_card';
+    const CODE = 'vicomm_card';
     const SUPPORTED_BRANDS = 'supported_brands';
     const ALLOW_INSTALLMENTS = 'allow_installments';
     const INSTALLMENTS_TYPES = 'installments_types';

@@ -165,12 +165,30 @@ define(
             getAvailableInstallmentsTypes: function () {
                 let config_installments_types = window.checkoutConfig.payment['vicomm_card'].installments_types;
                 let installments_options = [
+                    {'value':1, 'text': $t('Revolving and deferred without interest (The bank will pay to the commerce the installment, month by month)')},
                     {'value':2, 'text': $t('Deferred with interest')},
                     {'value':3, 'text': $t('Deferred without interest')},
+                    {'value':7, 'text': $t('Deferred with interest and months of grace')},
+                    {'value':6, 'text': $t('Deferred without interest pay month by month')},
                     {'value':9, 'text': $t('Deferred without interest and months of grace')},
+                    {'value':10, 'text': $t('Deferred without interest and months of grace')},
+                    {'value':21, 'text': $t('Deferred without interest promotion bimonthly')},
+                    {'value':22, 'text': $t('For Diners Club exclusive, deferred with and without interest')},
+                    {'value':30, 'text': $t('Deferred with interest pay month by month')},
+                    {'value':50, 'text': $t('Deferred without interest promotions (Supermaxi)')},
+                    {'value':51, 'text': $t('Deferred with interest (Cuota fácil)')},
+                    {'value':52, 'text': $t('Without interest (Rendecion Produmillas)')},
+                    {'value':53, 'text': $t('Without interest sale with promotions')},
+                    {'value':70, 'text': $t('Deferred special without interest')},
+                    {'value':72, 'text': $t('Credit without interest (cte smax)')},
+                    {'value':73, 'text': $t('Special credit without interest (smax)')},
+                    {'value':74, 'text': $t('Prepay without interest (smax)')},
+                    {'value':75, 'text': $t('Defered credit without interest (smax)')},
+                    {'value':90, 'text': $t('Without interest with months of grace (Supermaxi)')}
                 ];
                 let installments_type = [
                     {'value': -1, 'text': $t('Disable Installments')},
+                    {'value': 0, 'text': $t('Enable Installments')}
                 ];
                 for (let i = 0; i < installments_options.length; i++) {
                     if (config_installments_types.includes(String(installments_options[i]['value']))) {

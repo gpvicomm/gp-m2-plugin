@@ -7,7 +7,7 @@
         <method name="vicomm_card">
             <allow_multiple_address>0</allow_multiple_address>
         </method>
-        <method name="vicomm_card">
+        <method name="vicomm_ltp">
             <allow_multiple_address>0</allow_multiple_address>
         </method>
     </methods>

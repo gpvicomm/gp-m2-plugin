@@ -6,7 +6,7 @@ use Magento\Framework\Validator\Exception as MagentoValidatorException;
 use Magento\Payment\Gateway\Http\ClientInterface;
 use Magento\Payment\Gateway\Http\TransferInterface;
 use ViComm\Exceptions\ViCommErrorException;
-use Payment\Payment as ViComm;
+use ViComm\ViComm;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Helper\Logger;
 

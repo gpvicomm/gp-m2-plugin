@@ -3,7 +3,8 @@
 namespace ViComm\PaymentGateway\Gateway\Http\Client;
 
 use Magento\Sales\Model\Order\Payment;
-use Payment\Payment as ViComm;
+use ViComm\Exceptions\ViCommErrorException;
+use ViComm\ViComm;
 use ViComm\PaymentGateway\Gateway\Config\CardConfig;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 

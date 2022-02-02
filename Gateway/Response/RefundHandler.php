@@ -7,6 +7,7 @@ use Magento\Framework\Validator\Exception as MagentoValidatorException;
 use Magento\Payment\Gateway\Data\PaymentDataObjectInterface;
 use Magento\Payment\Gateway\Response\HandlerInterface;
 use Magento\Sales\Model\Order\Payment;
+use ViComm\PaymentGateway\Config\Handler\CanRefundHandler;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Helper\Logger;
 

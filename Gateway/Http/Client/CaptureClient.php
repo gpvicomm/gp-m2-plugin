@@ -3,8 +3,8 @@
 namespace ViComm\PaymentGateway\Gateway\Http\Client;
 
 use Magento\Sales\Model\Order\Payment;
-use ViComm\Exceptions\ViCommErrorException;
-use ViComm\ViComm;
+use ViComm\Exceptions\VicommErrorException;
+use Vicomm\Vicomm;
 use ViComm\PaymentGateway\Gateway\Config\CardConfig;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Model\Adminhtml\Source\Currency;
@@ -61,7 +61,7 @@ class CaptureClient extends AbstractClient
                 if ($status_detail !== 0) {
                     return $response;
                 }
-            } catch (ViCommErrorException $e) {
+            } catch (VicommErrorException $e) {
                 $code = $e->getCode();
                 if ($code !== 403) {
                     throw $e;
@@ -76,7 +76,7 @@ class CaptureClient extends AbstractClient
             $amount = isset($extra_data['additional_amount']) ? $extra_data['additional_amount'] : $request_body['order']['amount'];
             try {
                 $response = $charge->capture($transaction_id, $amount, true);
-            } catch (ViCommErrorException $e) {
+            } catch (VicommErrorException $e) {
                 $message = $e->getMessage();
                 if (strpos($message, "Transaction already captured") !== false) {
                     $response = [

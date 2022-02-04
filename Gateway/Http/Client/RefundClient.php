@@ -3,8 +3,8 @@
 namespace ViComm\PaymentGateway\Gateway\Http\Client;
 
 use Magento\Sales\Model\Order\Payment;
-use ViComm\Exceptions\ViCommErrorException;
-use ViComm\ViComm;
+use Vicomm\Exceptions\VicommErrorException;
+use Vicomm\Vicomm;
 use ViComm\PaymentGateway\Gateway\Config\CardConfig;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 
@@ -55,7 +55,7 @@ class RefundClient extends AbstractClient
                 if (isset($response['transaction']['status']) && $response['transaction']['status'] == 'failure') {
                     return $response;
                 }
-            } catch (ViCommErrorException $e) {
+            } catch (VicommErrorException $e) {
                 $code = $e->getCode();
                 if ($code !== 403) {
                     throw $e;

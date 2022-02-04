@@ -5,8 +5,8 @@ namespace ViComm\PaymentGateway\Gateway\Http\Client;
 use Magento\Framework\Validator\Exception as MagentoValidatorException;
 use Magento\Payment\Gateway\Http\ClientInterface;
 use Magento\Payment\Gateway\Http\TransferInterface;
-use ViComm\Exceptions\ViCommErrorException;
-use ViComm\ViComm;
+use ViComm\Exceptions\VicommErrorException;
+use Vicomm\Vicomm;
 use ViComm\PaymentGateway\Gateway\Config\GatewayConfig;
 use ViComm\PaymentGateway\Helper\Logger;
 
@@ -53,7 +53,7 @@ abstract class AbstractClient implements ClientInterface
         try {
             $response = $this->process($data);
             $response = json_decode(json_encode($response), true);
-        } catch (ViCommErrorException $e) {
+        } catch (VicommErrorException $e) {
             $code = $e->getCode();
             $message = $e->getMessage();
             $this->logger->error(sprintf('AbstractClient.placeRequest error: %s, message: %s', $code, $message));

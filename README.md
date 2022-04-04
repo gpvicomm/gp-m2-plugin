@@ -1,6 +1,6 @@
-# Global Payments ViComm Magento module
+# GpViComm Magento module
 
-This module is a solution that allows Magento users to easily process payments with Global Payments ViComm.
+This module is a solution that allows Magento users to easily process payments with GpViComm.
 
 ## Download and Installation
 

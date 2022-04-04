@@ -28,16 +28,16 @@ Once the installation finished, continue with the next commands in your bash ter
 `php bin/magento setup:static-content:deploy`
 
 
-Now you can see the Global Payments ViComm settings in this path `Stores > Configuration > Sales > Payment Methods` on your Magento admin dashboard.
+Now you can see the GpViComm settings in this path `Stores > Configuration > Sales > Payment Methods` on your Magento admin dashboard.
 
 
 ## Maintenance
 If you need update the plugin to latest version execute: `composer update vicomm/payment-gateway` or `composer require vicomm/payment-gateway:2.3.1` for specific version.
 
 ## Webhook Notifications and Order Updates
-Every time a transaction changes their status you will get an HTTP POST request from Global Payments ViComm to your webhook.
+Every time a transaction changes their status you will get an HTTP POST request from GpViComm to your webhook.
 
 The URL that will be used for the order updates via webhook is:
 `https://magentodomain.com/rest/V2/webhook/vicomm`
 
-This URL will be configured on Global Payments ViComm.
+This URL will be configured on GpViComm.

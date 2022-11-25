@@ -1,43 +1,47 @@
-# GpViComm Magento module
+# Módulo Magento GpViComm
 
-This module is a solution that allows Magento users to easily process payments with GpViComm.
+Este modulo permite a los usuarios de magento procesar pagos de manera fácil y rápida con GpVicomm.
 
-## Download and Installation
+## Descarga e Instalación
 
-**1. Execute this command for install our package:**
+**1. Ejecuta el siguiente comando para instalar nuestro paquete :**
 
-Install the latest version.  `composer require vicomm/payment-gateway`
+Para instalar la ultima versión.  `composer require vicomm/payment-gateway`
 
-Install a specific version.  `composer require vicomm/payment-gateway:2.4.0`
+Para instalar una version específica.  `composer require vicomm/payment-gateway:2.4.0`
 
-Once the installation finished, continue with the next commands in your bash terminal.
+Una vez que finalice la instalación, Continúe con el siguiente comando en su terminal.
 
 
-**2. Update dependency injection:**
+**2. Actualizar dependencias:**
 
 `php bin/magento setup:di:compile`
 
 
-**3. Update modules registry:**
+**3. Actualizar modulos de registro:**
 
 `php bin/magento setup:upgrade`
 
 
-**Optional.- This command is optional for production environments:**
+**Opcional.- Este comando es opcional para ambientes de producción:**
 
 `php bin/magento setup:static-content:deploy`
 
 
-Now you can see the GpViComm settings in this path `Stores > Configuration > Sales > Payment Methods` on your Magento admin dashboard.
+Ahora Debería ver los settings de GpViComm  en `Stores > Configuration > Sales > Payment Methods` en el Dashboard Admin de Magento.
 
 
-## Maintenance
-If you need update the plugin to latest version execute: `composer update vicomm/payment-gateway` or `composer require vicomm/payment-gateway:2.4.0` for specific version.
+## Mantenimiento y Actualización
 
-## Webhook Notifications and Order Updates
-Every time a transaction changes their status you will get an HTTP POST request from GpViComm to your webhook.
+Si necesita actualizar la última versión del plugin use: `composer update vicomm/payment-gateway` 
+o si requiere un versión especifica `composer require vicomm/payment-gateway:2.4.0` .
 
-The URL that will be used for the order updates via webhook is:
+## Notificaciones Webhook y Actualizacion de Transacciones
+
+Cada que una transacción cambie su estado, GpViComm enviara una notificación HTTP POST a su webhook.
+
+La URL que se debe usar para actualizar via webhook es:
+
 `https://magentodomain.com/rest/V2/webhook/vicomm`
 
-This URL will be configured on GpViComm.
+Esta URL estara configurada en GpViComm.

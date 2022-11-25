@@ -32,7 +32,7 @@ Now you can see the GpViComm settings in this path `Stores > Configuration > Sal
 
 
 ## Maintenance
-If you need update the plugin to latest version execute: `composer update vicomm/payment-gateway` or `composer require vicomm/payment-gateway:2.3.4` for specific version.
+If you need update the plugin to latest version execute: `composer update vicomm/payment-gateway` or `composer require vicomm/payment-gateway:2.4.0` for specific version.
 
 ## Webhook Notifications and Order Updates
 Every time a transaction changes their status you will get an HTTP POST request from GpViComm to your webhook.
